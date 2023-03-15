@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Quiz Hero Assignment</title>
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js" defer></script>
 
@@ -25,30 +21,141 @@
     <!-- You don't need to change noChange.js file. It's fine -->
 
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              common: ["Rubik", "sans-serif"],
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
             },
-          },
-        },
-      };
+        };
     </script>
-  </head>
-  <body class="bg-white font-common">
+</head>
+
+<body class="bg-white font-common">
     <!-- Header/Navbar section start -->
     <header class="h-16 flex items-center shadow-sm">
-      <nav class="flex justify-between items-center w-9/12 mx-auto">
-        <div class="text-zinc-800 font-bold uppercase">
-          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
-          <p class="text-[10px] font-normal capitalize -mt-1">
-            Get ready to Quiz and be amazed!
-          </p>
-        </div>
-      </nav>
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+        </nav>
     </header>
     <!-- Header/Navbar section end -->
 
-  </body>
+    <div class="container m-auto">
+        <!-- Question answer section start  -->
+
+        <section class="mt-9">
+
+
+            <!-- question 1 -->
+            <h1 class="text-2xl font-medium">1. What is the difference between map, filter, forEach and find?</h1>
+            <p class="mt-3"><span class="font-medium">Ans:</span>JavaScript's higher-order functions map, filter,
+                forEach,
+                and find are all used to change arrays. Here's a quick explanation of how they're different:
+                <br>
+                <br>
+
+            <p>map: This method makes a new array by calling a given function on each element of the original array. The
+                current element, its index, and the original array are passed to the function. The function returns a
+                value,
+                which is added to the new array. The new array will always have the same number of elements as the
+                original
+                array.</p>
+
+            <br>
+            <p> filter: This method makes a new array by removing from the original array any elements that don't pass a
+                test function. The current element, its index, and the original array are passed to the function. It
+                should
+                return a boolean value that says whether or not the element should be added to the new array. The size
+                of
+                the new array might be less than the size of the old array.</p>
+
+            <br>
+            <p> forEach: This method goes through each array element and runs a function for each one. The current
+                element,
+                its index, and the original array are passed to the function. The function doesn't return anything,
+                though.
+                It is mostly used for side effects, like writing to a log or changing a variable.</p>
+
+            <br>
+            <p>find: This method returns the first element in the array that passes a given test function. The current
+                element, its index, and the original array are passed to the function. It should return a boolean value
+                that
+                says whether or not the element passes the test. Undefined is returned if no element passes the test.
+            </p>
+
+            </p>
+
+            <!-- question 2 -->
+            <h1 class="text-2xl font-medium mt-6">2. What is the difference local storage, session storage, and cookies?
+            </h1>
+            <p class="mt-3"><span class="font-medium">Ans:</span>
+                Web browsers offer localStorage, sessionStorage, and cookies as ways to store data on the client side.
+                Here's a quick explanation of how they're different:
+                <br>
+                <br>
+            <p>
+                localStorage: This mechanism lets web apps store key-value pairs locally on a user's browser. Even if
+                the user closes the browser window or restarts the computer, the data stored in localStorage will still
+                be there. The data is available in multiple tabs and windows, and the same JavaScript code can be used
+                to get to it.</p>
+            <br>
+            <p>sessionStorage: This is similar to localStorage, but the data stored in sessionStorage is tied to a
+                specific session. Data stored in sessionStorage is only available in the current window or tab and is
+                deleted when the window or tab is closed. But if the user opens a new tab or window, the data stored in
+                sessionStorage will be available in the new tab or window.</p>
+            <br>
+
+            <p>Cookies are small text files that a web server puts on a user's browser. They can be used to store small
+                amounts of data, like user preferences or login information, and every request sends them to the server.
+                Cookies can be set to disappear after a certain amount of time or when the user closes the browser.</p>
+            </p>
+
+            <!-- question 3 -->
+            <h1 class="text-2xl font-medium mt-6">3. What is event loop and how does it works?
+            </h1>
+            <p class="mt-3"><span class="font-medium">Ans:</span> 
+                An event loop is a piece of code that is used in event-driven programming, a common way to build websites today. It is used to manage and coordinate the different activities and events that happen in an application.
+
+                At a high level, an event loop works by constantly watching a queue of events or tasks, such as user inputs or network requests. When an event happens, it is added to the queue, and the event loop processes the queue in a sequential, non-blocking way.
+                
+                The event loop starts by looking at the queue to see if any events or tasks are waiting to be done. If none of them happen, it waits until one does. Once an event is found, the event loop will handle it by calling the right callback function or event handler. The handler function may then start more tasks or events, which will also be added to the queue to be processed.
+                
+                One important thing about an event loop is that it doesn't stop the main execution thread. This means that while the event loop is waiting for events or tasks to finish, other parts of the application can still run. This makes it possible for applications to work quickly and well.
+                
+                Overall, the event loop is an important part of event-driven programming because it makes it possible for applications to work quickly and effectively.</p>
+
+                <!-- question 4 -->
+                <h1 class="text-2xl font-medium mt-6">4. Write down the functionality of quizTimer function.
+                </h1>
+                <p class="mt-3"><span class="font-medium">Ans:</span> 
+                The quizTimer function is mainly using here to handle the time of the quiz. One parameter named dismiss is passed here. If dismiss is passed it will call clearInterval function. Otherwise it will call setInterval function. </p>
+
+
+
+                 <!-- question 4 -->
+                 <h1 class="text-2xl font-medium mt-6">4. Write down the functionality of chooseQuiz function.
+                </h1>
+                <p class="mt-3"><span class="font-medium">Ans:</span> 
+                The chooseQuiz function is used here to choose the answers of the quiz. Two parameters are passed here. One is index and another one is the givenAns. If the answer exist, it will splice the answer array. Otherwise it will push in the answer array. This function lastly call the displayAnswers function to show the answers</p>
+
+
+
+
+
+
+        </section>
+
+    </div>
+
+
+
+</body>
+
 </html>

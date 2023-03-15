@@ -49,6 +49,7 @@ const loadQuiz = async () => {
   const data = await res.json();
   const quizData = data;
   displayQuiz(quizData);
+  console.log(quizData);
 };
 
 
